@@ -2,6 +2,12 @@
 
 This repository contains a ROS2 Jazzy driver for a Hoverboard using a **Python-based Node** that communicates via an **FTDI (Serial)** adapter. 
 - It converts standard ROS2 `geometry_msgs/Twist` messages into serial packets compatible with custom hoverboard firmwares.
+## Before using this code 
+### This code is compatable with Hoverboard hacking by using one of these links :
+- hoverboard-firmware-hack      https://github.com/cloidnerux/hoverboard-firmware-hack.git
+- hoverboard-firmware-hack-SIN   https://github.com/EFeru/hoverboard-firmware-hack-SIN.git
+- hoverboard-sideboard-hack-STM https://github.com/EFeru/hoverboard-sideboard-hack-STM.git
+- hoverboard-serial                 https://github.com/mohamed4hanon/hoverboard-serial.git
 
 
 ## 🛠 Features
@@ -109,6 +115,7 @@ The firmware on the Hoverboard side will discard any packet where the calculated
 - Mohamed Hanon
 - ICE eng.
 - Iraq
+
 
 
 
