@@ -5,9 +5,9 @@ This repository contains a ROS2 Jazzy driver for a Hoverboard using a **Python-b
 
 # Table of Contents
 * [Before using this code](#Before-using-this-code)
-* [Features](#Features)
-* [Installation](#Installation)
-* [How to Run](#How-to-Run)
+* [Features](#-Features)
+* [Installation](#Installation-)
+* [How to Run](#-How-to-Run)
 * [Hardware Wiring](#Hardware-Wiring)
 * [Control Logic & Mathematics](#Control-Logic-&-Mathematics)
 
@@ -119,6 +119,7 @@ The firmware on the Hoverboard side will discard any packet where the calculated
 
 ## About me :
 - Mohamed Hanon - ICE eng. - Iraq
+
 
 
 
