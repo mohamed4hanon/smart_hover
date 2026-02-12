@@ -2,13 +2,21 @@
 
 This repository contains a ROS2 Jazzy driver for a Hoverboard using a **Python-based Node** that communicates via an **FTDI (Serial)** adapter. 
 - It converts standard ROS2 `geometry_msgs/Twist` messages into serial packets compatible with custom hoverboard firmwares.
+
+# Table of Contents
+* [Before using this code](#Before-using-this-code)
+* [Features](#Features)
+* [Installation](#Installation)
+* [How to Run](#How-to-Run)
+* [Hardware Wiring](#Hardware-Wiring)
+* [Control Logic & Mathematics](#Control-Logic-&-Mathematics)
+
 ## Before using this code 
 ### This code is compatable with Hoverboard hacking by using one of these links :
 - hoverboard-firmware-hack      https://github.com/cloidnerux/hoverboard-firmware-hack.git
 - hoverboard-firmware-hack-SIN   https://github.com/EFeru/hoverboard-firmware-hack-SIN.git
 - hoverboard-sideboard-hack-STM https://github.com/EFeru/hoverboard-sideboard-hack-STM.git
 - hoverboard-serial                 https://github.com/mohamed4hanon/hoverboard-serial.git
-
 
 ## 🛠 Features
 - **ROS2 Jazzy** native support.
@@ -36,7 +44,6 @@ sudo apt install ros-jazzy-rmw-cyclonedds-cpp
 pip install pyserial
 ```
 يُرجى استخدام الرمز البرمجي بحذر.
-
 2. Build the Package
 Clone this repo into your workspace src folder, then build:
 ```bash
@@ -79,7 +86,6 @@ This project is licensed under the MIT License.
 ---
 ```
 
-
 ## 🔢 Control Logic & Mathematics
 
 The driver converts ROS2 standard velocity units (SI) into raw integers that the Hoverboard firmware can process.
@@ -112,9 +118,7 @@ $$Checksum = START\_FRAME \oplus Steer \oplus Speed$$
 The firmware on the Hoverboard side will discard any packet where the calculated checksum doesn't match the received one.
 
 ## About me :
-- Mohamed Hanon
-- ICE eng.
-- Iraq
+- Mohamed Hanon - ICE eng. - Iraq
 
 
 
